@@ -84,6 +84,8 @@ console.log('the murderer is ', murderer);
 
 // Output: 'the murderer is rick'. This is because innerFunction only reassigns the outerFunction variable not the global variable. And outerFunction asserts a new variable and does not change the globabl variable.
 
+// Note that a variable within a method will look for the closest declared variable and change it. So in above it will change outerFunction variable. If outerFunction did not delcare a variable it would change the global variable. If there were no other variable it would simply declare a globabl variable.
+
 
 var animal1 = "butterfly, ";
 var animal2 = "lemon, ";
